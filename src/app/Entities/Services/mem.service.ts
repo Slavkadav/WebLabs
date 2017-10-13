@@ -7,7 +7,7 @@ export class MemService {
     memes: Mem[] = [
         {
             type: MemType.Text,
-            textContent:"Lorem ipsum dolores sit amet",
+            textContent:"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris eros arcu, rutrum elementum augue eget, iaculis tincidunt urna. Donec ac nulla quis urna luctus ultrices. Proin vel diam maximus sapien aliquam volutpat a nec justo. Nullam pulvinar justo vitae orci dignissim, nec placerat est sodales. Proin sapien augue, semper elementum fringilla a, viverra in quam. Nam a ultrices eros. Duis id neque sapien. Vivamus gravida dictum sapien ac placerat. Integer id congue mauris. Suspendisse at libero ut arcu posuere molestie vitae posuere diam. Suspendisse et sagittis libero.",
             header:"My first Mem"
         },
         {

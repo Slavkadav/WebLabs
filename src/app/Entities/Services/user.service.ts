@@ -4,13 +4,15 @@ import {User} from "../user";
 @Injectable()
 export class UserService {
 
-    users: User[];
+    users: User[]=[];
     constructor() {
     }
 
-    saveUser(user:User){
+    saveUser(username:string, password:string, email:string){
+        let user = new User(username,password,email);
         this.users.push(user);
-        localStorage.setItem('currentUser', user.nickname);
+        console.log(JSON.stringify(user));
+        localStorage.setItem('currentUser', JSON.stringify(user));
     }
 
 }
