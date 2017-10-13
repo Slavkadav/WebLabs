@@ -1,0 +1,44 @@
+.mem-item-wrapper {
+  border: 1px solid #ffa43c;
+  border-radius: 5px;
+  background: rgba(255,98,0,0.4);
+  box-shadow: 3px 3px rgba(215, 212, 212, 0.5);
+  width: 40%;
+  margin: 15px auto;
+  min-height: 180px;
+  position: relative;
+  .mem-header {
+    text-align: center;
+  }
+
+  .mem-content{
+    padding: 10px;
+
+    img, video{
+      max-width: 100%;
+    }
+  }
+  .mem-vote {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-between;
+    position: absolute;
+    height: 150px;
+    max-height: 100%;
+    top: 0;
+    right: -50px;
+    box-sizing: border-box;
+    font-size:24px;
+    .icon-arrow-up {
+      color: green;
+    }
+    .icon-arrow-down {
+      color: red;
+    }
+
+    .icon-arrow-up, .icon-arrow-down,.icon-bubbles2{
+      cursor: pointer;
+    }
+  }
+
+}

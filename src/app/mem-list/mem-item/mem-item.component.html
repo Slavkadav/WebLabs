@@ -1,0 +1,17 @@
+<div class="mem-item-wrapper">
+    <div class="mem-header">
+        <h3>{{ mem.header }}</h3>
+    </div>
+    <div class="mem-content">
+        <p *ngIf="mem.textContent">{{ mem.textContent }}</p>
+        <img *ngIf="mem.imgUrl" [src]="mem.imgUrl">
+        <video *ngIf="mem.videoUrl" controls>
+            <source [src]="mem.videoUrl">
+        </video>
+    </div>
+    <div class="mem-vote">
+        <div class="icon-arrow-up"></div>
+        <div class="icon-bubbles2"></div>
+        <div class="icon-arrow-down"></div>
+    </div>
+</div>
